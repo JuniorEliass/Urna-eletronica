@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="urna">
+        <section class="visor">
+            <img src="./imgens/justicaelei-removebg-preview.png" class="imagem__justica" alt="">
+            <div class="visor__display">
+                <h3 class="visor__dados">00</h3>
+                <img src="./imgens/" alt="" id="imagem">
+            </div>
+        </section>
+
+        <section class="botoes">
+
+            <div class="botoes__grade">
+                <ul class="lista__botoes">
+                    <div>
+                        <button class="botoes__urna" onclick="teclar('1')">1</button>
+                        <button class="botoes__urna" onclick="teclar('2')">2</button>
+                        <button class="botoes__urna" onclick="teclar('3')">3</button>
+                    </div>
+                    <div>
+                        <button class="botoes__urna" onclick="teclar('4')">4</button>
+                        <button class="botoes__urna" onclick="teclar('5')">5</button>
+                        <button class="botoes__urna" onclick="teclar('6')">6</button>
+                    </div>
+                    <div>
+                        <button class="botoes__urna" onclick="teclar('7')">7</button>
+                        <button class="botoes__urna" onclick="teclar('8')">8</button>
+                        <button class="botoes__urna" onclick="teclar('9')">9</button>
+
+                    </div>
+
+                </ul>
+
+                <button class="botoes__zero" onclick="teclar('0')">0</button>
+
+                <div class="botoes2">
+                    <button class="botoes__branco botoes__urna  funcoes" onclick="votoBranco()">Branco</button>
+                    <button class="botoes__corrigir botoes__urna funcoes" onclick="corrigir('')">Corrigir</button>
+                    <button class="botoes__confirma botoes__urna funcoes" onclick="confirma ('')">Confirma</button>
+                    <audio src="./sons/somurna (mp3cut.net).mp3" id="somConfirma"></audio>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

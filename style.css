@@ -1,0 +1,178 @@
+.urna {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c2d1ed;
+    padding-bottom: 10rem;
+}
+
+.imagem__justica {  
+    height: 100px;
+    padding-bottom: 1rem;
+}
+
+.botoes__grade {
+    background-color: #181b20;
+    margin-top: 9rem;
+}
+
+.lista__botoes {
+    background-color: #181b20;
+}
+
+.botoes__urna {
+    margin: 1rem;
+    width: 100px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.visor__display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: #ffffff;
+    color: #000000;
+    height: 300px;
+    flex-direction: column;
+}
+
+.visor__candidato {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+
+#imagem {
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+
+.visor__dados {
+    font-size: 50px;
+}
+
+.botoes__zero {
+    margin: 1rem;
+    width: 100px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: 9.5rem;
+}
+
+
+.botoes__corrigir {
+    cursor: pointer;
+    background-color: #ec520a;
+    border: none;
+    color: #000000;
+}
+
+.botoes__confirma {
+    background-color: #32e70e;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+.botoes__branco {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .botoes {
+        width: 300px;
+    }
+    .botoes__grade{
+        margin-top: 30px;
+    }
+    .urna {
+        flex-direction: column;
+    }
+    .visor {
+        width: 300px;
+    }
+    .visor__display {
+        width: 300px;
+    }
+    .botoes__urna {
+        margin: 10px;
+        width: 50px;
+        
+    }
+    .lista__botoes {
+        width: 250px;
+        margin-left: 50px;
+
+    }
+    .botoes__zero {
+        margin-left: 110px;
+    }
+    .funcoes {
+        margin-left: 30px;
+        width: 100px;
+    }
+    .botoes__confirma {
+        margin-left: 100px;
+    }
+    .visor__dados {
+        font-size: 16px;
+    }
+}
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .botoes {
+            width: 600px;
+        }
+        .urna {
+            flex-direction: column;
+        }
+        .visor {
+            width: 800px;
+        }
+        .visor__display {
+            width: 800px;
+        }
+        .botoes__urna {
+            margin-left: 60px;
+            width: 90px;
+            
+        }
+        .lista__botoes {
+            width: 600px;
+            margin-left: 50px;
+            
+        }
+        .botoes__zero {
+            margin-left: 276px;
+        }
+        .funcoes {
+            margin-left: 50px;
+            width: 100px;
+        }
+        .botoes__confirma {
+            margin-left: 70px;
+        }
+        .visor__dados {
+            font-size: 35px;
+        }
+        .botoes2 {
+            width: 600px;
+            margin-left: 60px;
+        }
+        .botoes__grade {
+            width: 650px;
+        }
+    }
