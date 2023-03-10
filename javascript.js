@@ -22,7 +22,7 @@ function teclar (num) {
         img.src = 'https://cdn.discordapp.com/attachments/1082704038837100544/1083732377127358566/bob.jpg';
         img.style.display = 'block'
     } else if(numero == '24'){
-        img.src = 'https://cdn.discordapp.com/attachments/1082704038837100544/1083732377127358566/bob.jpg';
+        img.src = 'https://cdn.discordapp.com/attachments/1082704038837100544/1083732377538412564/capa_goku.webp';
         img.style.display = 'block'
     } else {
         img.style.display = 'none'
@@ -47,7 +47,7 @@ function votoBranco () {
 
 function confirma () {
     if(visor.innerHTML == candidatos[0]) {
-        document.querySelector('.visor__dados').innerHTML = 'Voto confirmado'
+        document.querySelector('.visor__dados').innerHTML = 'Voto confirmado Shrek'
         document.querySelector('#somConfirma').play()
     } 
     else if(visor.innerHTML == candidatos[1]) {
