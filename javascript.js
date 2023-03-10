@@ -1,9 +1,7 @@
-let controle = 0, numero = ''
-let num = document.querySelectorAll(".botoes__urna").innerHTML
-let visor = document.querySelector(".visor__dados")
+let controle = 0, numero = '';
+let num = document.querySelectorAll(".botoes__urna").innerHTML;
+let visor = document.querySelector(".visor__dados");
 var img = document.querySelector("#imagem");
-
-
 
 window.alert("Olá!")
 window.alert("Candidatos : 14, 23, 24 e 00")
@@ -17,8 +15,19 @@ const candidatos = [
 
 function teclar (num) {
     numero = numero + num
-    mudatela()
-    img.style.display = 'none'
+    if(numero == '14'){
+        img.src = 'https://cdn.discordapp.com/attachments/1082704038837100544/1083732378050105365/shrek.jpeg'
+        img.style.display = 'block'
+    } else if(numero == '23'){
+        img.src = 'https://cdn.discordapp.com/attachments/1082704038837100544/1083732377127358566/bob.jpg';
+        img.style.display = 'block'
+    } else if(numero == '24'){
+        img.src = 'https://cdn.discordapp.com/attachments/1082704038837100544/1083732377127358566/bob.jpg';
+        img.style.display = 'block'
+    } else {
+        img.style.display = 'none'
+    }
+    mudatela() 
 }
 
 function mudatela (){
@@ -40,42 +49,25 @@ function confirma () {
     if(visor.innerHTML == candidatos[0]) {
         document.querySelector('.visor__dados').innerHTML = 'Voto confirmado'
         document.querySelector('#somConfirma').play()
-        img = document.querySelector("#imagem");
-        img.setAttribute('src', './imgens/shrek.jpeg');
-        img.style.display = 'block'
     } 
-    
     else if(visor.innerHTML == candidatos[1]) {
         document.querySelector('.visor__dados').innerHTML = 'Voto confirmado Bob'
         document.querySelector('#somConfirma').play()
-        var img = document.querySelector("#imagem");
-        img.style.display = 'block'
-        img.setAttribute('src', './imgens/bob.jpg');
     } 
-    
     else if (visor.innerHTML == candidatos[2]){
         document.querySelector('.visor__dados').innerHTML = `Voto confirmado Goku`
         document.querySelector('#somConfirma').play()
-        var img = document.querySelector("#imagem");
-        img.style.display = 'block'
-        img.setAttribute('src', './imgens/capa goku.webp');
     }
-
     else if(visor.innerHTML == candidatos[3] ) {
         document.querySelector('.visor__dados').innerHTML = 'Voto confirmado'
         document.querySelector('#somConfirma').play()
     } 
-    
     else if(visor.innerHTML == 'Voto em branco') {
         document.querySelector('.visor__dados').innerHTML = 'Voto confirmado'
         document.querySelector('#somConfirma').play()
-    } 
-    
+    }    
     else {
         document.querySelector('.visor__dados').innerHTML = 'Candidato não encontrado'
     }
-    numero=''
-    
+    numero=''   
 }
-
-
